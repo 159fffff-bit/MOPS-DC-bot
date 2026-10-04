@@ -2,10 +2,9 @@ name: MOPS 重大訊息監控
 
 on:
   schedule:
-    # 台灣時間 中午 12:00 = UTC 04:00
-    - cron: '0 4 * * *'
-    # 台灣時間 晚上 20:00 = UTC 12:00
-    - cron: '0 12 * * *'
+    # 台灣時間 UTC +8
+    - cron: '0 0-8 * * 1-5'
+
   workflow_dispatch:   # 允許手動觸發
 
 jobs:
